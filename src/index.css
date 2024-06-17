@@ -1,7 +1,0 @@
-/* Components */
-@import "./components/typography/index.css";
-@import "./components/header/index.css";
-@import "./components/grid/index.css";
-
-/* Base style */
-@import "./style/common.css";
