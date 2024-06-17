@@ -13,6 +13,6 @@ jobs:
         with:
           node-version: 18
       - run: npm install -g surge
-      - run: npm install -g vite
+      - run: npm ci
       - run: npm run build
       - run: surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
