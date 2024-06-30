@@ -1,0 +1,52 @@
+@keyframes showArrow {
+  0% {
+    left: 60px;
+  }
+
+  100% {
+    left: 90px;
+  }
+}
+
+.button {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grey);
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    .button__icon {
+      animation: showArrow 0.3s linear forwards;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -100;
+
+    svg {
+      margin-right: 19px;
+    }
+  }
+}
