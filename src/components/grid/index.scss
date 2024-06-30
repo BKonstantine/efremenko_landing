@@ -12,24 +12,35 @@
   &__row {
     flex-direction: row;
 
-    &_center {
-      justify-content: center;
-    }
+    &_horizontal {
+      &-space {
+        justify-content: space-between;
+      }
 
-    &_space {
-      justify-content: space-between;
+      &-center {
+        justify-content: center;
+      }
     }
   }
 
   &__col {
     flex-direction: column;
+    &_vertical {
+      &-center {
+        justify-content: center;
+      }
 
-    &_center {
-      justify-content: center;
+      &-space {
+        justify-content: space-between;
+      }
     }
+  }
 
-    &_space {
-      justify-content: space-between;
-    }
+  .gap-8 {
+    gap: 8px;
+  }
+
+  .gap-12 {
+    gap: 12px;
   }
 }

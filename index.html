@@ -15,7 +15,9 @@
     <header class="header">
       <div class="container center">
         <nav class="nav header__nav">
-          <ul class="nav__list center flex flex__row flex__row_space">
+          <ul
+            class="nav__list center flex flex__row flex__row_horizontal-space"
+          >
             <li class="nav__item">
               <a href="" class="nav__link comfortaa">Обо мне</a>
             </li>
@@ -34,7 +36,7 @@
           <div class="header__content flex flex__row">
             <div class="header__info">
               <h1>Шурашкевич Александра Юрьевна</h1>
-              <ul class="header__info-list">
+              <ul class="flex flex__col gap-8">
                 <li><span>Индивидуальный подход</span></li>
                 <li><span>Ответственность</span></li>
                 <li><span>Результативность</span></li>
@@ -50,7 +52,16 @@
       </div>
     </header>
     <main class="main"></main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="flex flex__row flex__row_hotizontal-center">
+        <div class="container center flex flex__col gap-12">
+          <p>г. Санкт-Петербург</p>
+          <p>ИНН 781633875227</p>
+          <p>a.shurashkewi4@gmail.com</p>
+          <p>8 (931) 381 – 33 – 78</p>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
