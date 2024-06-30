@@ -29,6 +29,13 @@
 
   &__col {
     flex-direction: column;
+
+    &_horizontal {
+      &-center {
+        justify-content: center;
+      }
+    }
+
     &_vertical {
       &-center {
         justify-content: center;
